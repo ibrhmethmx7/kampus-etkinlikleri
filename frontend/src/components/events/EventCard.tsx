@@ -1,0 +1,27 @@
+import { Link } from "react-router-dom";
+import type { CampusEvent } from "../../types/campus-event";
+import { formatDate } from "../../utils/format-date";
+
+interface Props {
+  event: CampusEvent;
+}
+
+function EventCard({ event }: Props) {
+  return (
+    <article className="kart">
+      <h3>{event.title}</h3>
+      <span className="etiket">{event.category}</span>
+      <p>
+        Tarih: <time dateTime={event.date}>{formatDate(event.date, event.time)}</time>
+      </p>
+      <p>Yer: {event.location}</p>
+      <p>Kontenjan: {event.capacity} kişi</p>
+      <p>{event.description}</p>
+      <Link className="kart-link" to={`/events/${event.id}`}>
+        Detayları gör
+      </Link>
+    </article>
+  );
+}
+
+export default EventCard;

@@ -1,0 +1,63 @@
+:root {
+  --renk-ana: #6f9a1f;
+  --renk-ana-koyu: #4f7212;
+  --renk-arka: #f6f9f1;
+  --renk-kart: #ffffff;
+  --renk-yazi: #24291f;
+  --renk-soluk: #5d6656;
+  --renk-cizgi: #dde4d3;
+  --renk-hata: #c0392b;
+  --renk-basari: #2e7d32;
+
+  --bosluk-s: 0.5rem;
+  --bosluk-m: 1rem;
+  --bosluk-l: 1.5rem;
+  --bosluk-xl: 2.5rem;
+
+  --kose: 6px;
+  --golge: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: var(--renk-yazi);
+  background: var(--renk-arka);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 var(--bosluk-s);
+}
+
+p {
+  margin: 0 0 var(--bosluk-s);
+}
+
+a {
+  color: var(--renk-ana-koyu);
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
