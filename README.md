@@ -1,6 +1,6 @@
 # Kampüs Etkinlikleri
 
-Fakültedeki seminer, atölye, söyleşi ve yarışmaları listeleyen React + TypeScript uygulaması. Sprint 6 ve vize teslimi.
+Fakültedeki seminer, atölye, söyleşi ve yarışmaları listeleyen React + TypeScript uygulaması. Sprint 7 ile yanına Express REST API eklendi (`backend/`).
 
 **Canlı adres:** https://ibrahimethemkaravelioglu-frontend.vercel.app
 
@@ -8,9 +8,20 @@ Fakültedeki seminer, atölye, söyleşi ve yarışmaları listeleyen React + Ty
 
 ## Kurulum
 
+Frontend (localhost:5173):
+
 ```bash
 cd frontend
 npm install
+npm run dev
+```
+
+Backend (localhost:3000), ayrıntılar `backend/README.md` içinde:
+
+```bash
+cd backend
+npm install
+cp .env.example .env
 npm run dev
 ```
 
