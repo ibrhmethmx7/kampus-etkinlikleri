@@ -29,8 +29,10 @@
 }
 
 .site-nav a {
-  display: block;
-  padding: 0.35rem 0.85rem;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
   border-radius: var(--kose);
   color: #fff;
   text-decoration: none;
@@ -80,12 +82,17 @@ main {
 
 /* ---------- Butonlar ---------- */
 .buton {
-  display: inline-block;
-  padding: 0.6rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 120px;
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: var(--kose);
   background: var(--renk-ana-koyu);
   color: #fff;
+  font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
@@ -95,9 +102,16 @@ main {
   filter: brightness(1.1);
 }
 
+.buton:focus-visible {
+  outline: 3px solid var(--renk-ana);
+  outline-offset: 2px;
+}
+
 .buton-kucuk {
-  padding: 0.35rem 0.8rem;
-  font-size: 0.9rem;
+  min-height: 44px;
+  min-width: 96px;
+  padding: 0.55rem 1.1rem;
+  font-size: 1rem;
 }
 
 .buton-grubu {
