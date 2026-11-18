@@ -1,6 +1,6 @@
 # Kampüs Etkinlikleri
 
-Fakültedeki seminer, atölye, söyleşi ve yarışmaları listeleyen React + TypeScript uygulaması. Sprint 7 ile yanına Express REST API eklendi (`backend/`).
+Fakültedeki seminer, atölye, söyleşi ve yarışmaları listeleyen React + TypeScript uygulaması. Sprint 7 ile yanına Express REST API eklendi (`backend/`), Sprint 8 ile veriler MongoDB'ye taşındı.
 
 **Canlı adres:** https://ibrahimethemkaravelioglu-frontend.vercel.app
 
@@ -16,12 +16,13 @@ npm install
 npm run dev
 ```
 
-Backend (localhost:3000), ayrıntılar `backend/README.md` içinde:
+Backend (localhost:3000), ayrıntılar `backend/README.md` içinde. `.env` dosyasındaki `MONGODB_URI` kendi MongoDB adresinle değiştirilmeli:
 
 ```bash
 cd backend
 npm install
 cp .env.example .env
+npm run seed
 npm run dev
 ```
 
